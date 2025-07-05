@@ -34,3 +34,14 @@ This project uses a webcam to detect and track a **colored object** in real-time
 ```bash
 git clone https://github.com/your-username/object-tracking-opencv.git
 cd object-tracking-opencv
+
+## 📸 Snapshots
+
+You can save a snapshot of the current tracking frame at any time by pressing the **`s` key** during tracking.
+
+Saved images will appear in the `snapshots/` folder automatically.
+
+### Example:
+```bash
+Snapshot saved: snapshots/frame_4822406293250.png
+
