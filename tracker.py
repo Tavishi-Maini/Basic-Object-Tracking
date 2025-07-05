@@ -46,6 +46,15 @@ while True:
     # --- 6. Show frame ---
     cv2.imshow("Object Tracker", frame)
 
+    # Save snapshot on key 's'
+    key = cv2.waitKey(1) & 0xFF
+    if key == ord('s'):
+        filename = f"snapshots/frame_{int(cv2.getTickCount())}.png"
+        cv2.imwrite(filename, frame)
+        print(f"Snapshot saved: {filename}")
+    elif key == ord('q'):
+        break
+
     # Exit on 'q'
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
